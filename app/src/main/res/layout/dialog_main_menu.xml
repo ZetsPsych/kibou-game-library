@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="280dp"
+    android:layout_height="250dp"
+    android:background="@color/colorPrimaryDarkDarker">
+    <Button
+        android:id="@+id/btnDialogAddGame"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:text="Add Game"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"/>
+
+    <Button
+        android:id="@+id/btnDialogSettings"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnDialogAddGame"
+        android:layout_alignLeft="@id/btnDialogAddGame"
+        android:layout_marginTop="25dp"
+        android:background="@color/colorPrimary"
+        android:text="Settings"
+        android:textColor="@color/white"/>
+
+    <Button
+        android:id="@+id/btnDialogAbout"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:text="Credits"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:layout_below="@id/btnDialogSettings"/>
+</RelativeLayout>

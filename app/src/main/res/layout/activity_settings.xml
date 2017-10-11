@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.SettingsActivity"
+    android:background="@color/colorPrimaryDarkDarker">
+
+    <TextView
+        android:id="@+id/stColumns"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Icon Number"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"/>
+
+    <TextView
+        android:id="@+id/stColumnsExplanation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="Number of icons by row"
+        android:layout_below="@id/stColumns"
+        android:layout_alignLeft="@id/stColumns"
+        />
+
+    <Spinner
+        android:id="@+id/stIconNumber"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_alignTop="@id/stColumns"
+        >
+
+    </Spinner>
+
+    <TextView
+        android:id="@+id/stWallpaper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/stColumnsExplanation"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:text="Wallpaper"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:id="@+id/stWallpaperExplanation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="Have your waifu as\nyour app background"
+        android:layout_below="@id/stWallpaper"
+        android:layout_alignLeft="@id/stColumns"
+        />
+
+    <Button
+        android:id="@+id/stWallpaperButton"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/stIconNumber"
+        android:layout_alignLeft="@id/stIconNumber"
+        android:layout_alignStart="@id/stIconNumber"
+        android:layout_marginTop="25dp"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/white"
+        android:text="Choose"
+        />
+
+    <Button
+        android:id="@+id/stWallpaperButtonDefault"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/stIconNumber"
+        android:layout_alignEnd="@id/stIconNumber"
+        android:layout_alignRight="@id/stIconNumber"
+        android:layout_marginTop="25dp"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/white"
+        android:text="Default"/>
+
+    <TextView
+        android:id="@+id/stCustomTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/stWallpaperExplanation"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:text="Custom App Title"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:id="@+id/stCustomTitleExplanation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="Leave blank for\ndefault title"
+        android:layout_below="@id/stCustomTitle"
+        android:layout_alignLeft="@id/stColumns"
+        />
+    
+    <EditText
+        android:id="@+id/stCustomTitleValue"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/stWallpaperButton"
+        android:layout_marginTop="35dp"
+        android:layout_alignStart="@id/stWallpaperButton"
+        android:layout_alignLeft="@id/stWallpaperButton"
+        android:textColor="@color/white"/>
+
+</RelativeLayout>
